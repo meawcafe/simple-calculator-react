@@ -1,0 +1,33 @@
+.calc-button {
+  margin: 0.2rem;
+  background-color: var(--main-color3);
+  color: var(--text-color1);
+  font-size: 1.6rem;
+  
+  font-family: var(--mono-font);
+  cursor: pointer;
+  opacity: 0.6;
+
+  border-radius: 0.2rem;
+  
+  transition: opacity 500ms ease, color 500ms ease;
+}
+
+.calc-button:hover {
+  opacity: 1;
+  transition: opacity 200ms ease;
+}
+
+.calc-button:active {
+  transition: opacity 10ms ease;
+  opacity: 0.2;
+}
+
+.operations:hover {
+  background-color: var(--accent-color1);
+}
+
+
+.btn-span-2 {
+  grid-column: span 2
+}

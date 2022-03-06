@@ -1,0 +1,66 @@
+:root {
+  /* colors */
+  --main-color0: rgb(35, 35, 47, 0.4);
+  --main-color3: rgba(255, 255, 255, 0.04);
+
+  --accent-color1: rgba(33, 121, 48, 0.2);
+
+  --text-color1: #cfcfe7;
+  --text-color2: #9a9ab3;
+  --text-color3: #8a8aa0;
+
+  font-size: 16px;
+
+  --mono-font: 'Courier Prime', BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  
+}
+
+body {
+  background-color: rgb(46, 46, 46);
+  color: white;
+
+  height: 100vh;
+  width: 100vw;
+
+  color: var(--text-color1);
+  font-family: var(--mono-font);
+}
+
+#root {
+  height: 100vh;
+  width: 100vw;
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  background: url("./assets/bg.jpg") center;
+  background-size: cover;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  
+  box-sizing: border-box;
+
+  -webkit-tap-highlight-color: transparent;
+  -moz-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+img {
+  display: block;
+}
+
+button {
+  user-select: none;
+  outline: none;
+  text-decoration: none;
+  border: none;
+}
+
+::selection {
+  background-color: var(--accent-color1);
+  color: white;
+}
